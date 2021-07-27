@@ -1,0 +1,42 @@
+{
+  "name": "@winfe/plugin-modify-config",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/",
+    "bin/"
+  ],
+  "keywords": [
+    "winfe",
+    "vuepress",
+    "material",
+    "plugin"
+  ],
+  "repository": {
+    "url": "https://github.com/cool-fe/winex-cli.git",
+    "directory": "packages/cli",
+    "type": "ts,node"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/",
+    "access": "public"
+  },
+  "dependencies": {
+    "@vuepress/shared-utils": "^1.8.2",
+    "@winfe/plugin-auto-material-doc": "^0.0.1",
+    "@winfe/plugin-demo-container": "^0.0.1",
+    "@winfe/plugin-registry-material-components": "^0.0.1",
+    "@winning-plugin/webpack-filelist-export": "^1.0.6",
+    "http-proxy-middleware": "^2.0.1",
+    "markdown-it-emoji": "^2.0.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress-types": "^0.9.4"
+  }
+}

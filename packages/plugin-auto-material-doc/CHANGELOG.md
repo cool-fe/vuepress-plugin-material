@@ -1,0 +1,1 @@
+# @winfe/plugin-auto-material-doc
