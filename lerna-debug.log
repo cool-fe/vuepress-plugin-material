@@ -1,0 +1,15 @@
+23 error Error: Command failed: git diff --name-only  -- packages/plugin-auto-material-doc
+23 error fatal: bad revision 'undefined'
+23 error
+23 error
+23 error     at makeError (/Users/gaowujun/work/winex/vuepress-plugin-material/node_modules/execa/index.js:174:9)
+23 error     at Function.module.exports.sync (/Users/gaowujun/work/winex/vuepress-plugin-material/node_modules/execa/index.js:338:15)
+23 error     at Object.execSync (/Users/gaowujun/work/winex/vuepress-plugin-material/node_modules/@lerna/child-process/index.js:26:16)
+23 error     at diffSinceIn (/Users/gaowujun/work/winex/vuepress-plugin-material/node_modules/@lerna/collect-updates/lib/make-diff-predicate.js:63:23)
+23 error     at hasDiffSinceThatIsntIgnored (/Users/gaowujun/work/winex/vuepress-plugin-material/node_modules/@lerna/collect-updates/lib/make-diff-predicate.js:27:18)
+23 error     at isCandidate (/Users/gaowujun/work/winex/vuepress-plugin-material/node_modules/@lerna/collect-updates/collect-updates.js:88:77)
+23 error     at /Users/gaowujun/work/winex/vuepress-plugin-material/node_modules/@lerna/collect-updates/lib/collect-packages.js:11:9
+23 error     at Map.forEach (<anonymous>)
+23 error     at collectPackages (/Users/gaowujun/work/winex/vuepress-plugin-material/node_modules/@lerna/collect-updates/lib/collect-packages.js:10:12)
+23 error     at collectUpdates (/Users/gaowujun/work/winex/vuepress-plugin-material/node_modules/@lerna/collect-updates/collect-updates.js:87:10)
+23 error     at VersionCommand.initialize (/Users/gaowujun/work/winex/vuepress-plugin-material/node_modules/@lerna/version/index.js:192:20)
