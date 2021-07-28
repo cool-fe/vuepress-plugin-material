@@ -12,7 +12,7 @@
     "publish": {
       "ignoreChanges": ["*.md", ".npmrc"],
       "registry": "http://registry.npmjs.org/",
-      "version": ["patch"]
+      "version": ["--conventional-graduate"]
     },
     "version": {
       "conventionalCommits": true,
