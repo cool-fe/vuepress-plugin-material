@@ -1,5 +1,5 @@
 {
-  "name": "@winfe/plugin-modify-config",
+  "name": "@winfe/plugin-material-config",
   "version": "0.0.1",
   "engines": {
     "node": ">=12.0.0"
@@ -31,7 +31,6 @@
     "@winfe/plugin-auto-material-doc": "^0.0.1",
     "@winfe/plugin-demo-container": "^0.0.1",
     "@winfe/plugin-registry-material-components": "^0.0.1",
-    "@winning-plugin/webpack-filelist-export": "^1.0.6",
     "http-proxy-middleware": "^2.0.1",
     "markdown-it-emoji": "^2.0.0"
   },

@@ -3,7 +3,12 @@
 
 import { createProxyMiddleware } from 'http-proxy-middleware';
 
+let isSetProxyed = false;
+
 export default function setupProxyFeature(app: any, proxy: any): void {
+  if (isSetProxyed) return;
+  isSetProxyed = true;
+
   /**
    * Assume a proxy configuration specified as:
    * proxy: {

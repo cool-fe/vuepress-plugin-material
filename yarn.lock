@@ -3257,11 +3257,6 @@
   resolved "https://registry.npmjs.org/@winfe/eslint-config-winex/-/eslint-config-winex-0.0.11.tgz#9c830a3ec6338250206ed243c4b2764d2eb58baf"
   integrity sha512-fNx1tqc1FLEtlUUdt280LfSd878dlpHP5+1xZiaSEgcD8IGltir93F/w7Ksu+6D1wsJT5sFb6S8/KofKoM5WlQ==
 
-"@winning-plugin/webpack-filelist-export@^1.0.6":
-  version "1.0.6"
-  resolved "http://172.16.9.242:8081/repository/npm-group/@winning-plugin/webpack-filelist-export/-/webpack-filelist-export-1.0.6.tgz#df876368158a8763f0d316cfc4e1c5ad53592616"
-  integrity sha512-gtZcBoIorMwzAxapiyKSQfVPVsQRj71cm2GtgoxOeUiPstqS01vk1Oo6QSpzL1W6pEcrN0kPLMnqxxV0ab8NFQ==
-
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
   resolved "https://registry.npmjs.org/@xtuc/ieee754/-/ieee754-1.2.0.tgz#eef014a3145ae477a1cbc00cd1e552336dceb790"

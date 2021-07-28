@@ -2,7 +2,7 @@ import { readdirSync } from 'fs';
 import { join } from 'path';
 
 const headPkgs = [];
-const tailPkgs = [];
+const tailPkgs = ['plugin-material-config'];
 const otherPkgs = readdirSync(join(__dirname, 'packages')).filter(
   (pkg) => pkg.charAt(0) !== '.' && !headPkgs.includes(pkg) && !tailPkgs.includes(pkg)
 );

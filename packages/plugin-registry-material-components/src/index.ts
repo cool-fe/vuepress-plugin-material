@@ -11,7 +11,7 @@ interface IPluginOptions {
 
 let moduleId = 0;
 
-module.exports = (options: IPluginOptions): ReturnType<PluginFunction<IPluginOptions>> => ({
+export default (options: IPluginOptions): ReturnType<PluginFunction<IPluginOptions>> => ({
   name: '@winfe/registry-components-plugin',
   multiple: true,
   alias: {
