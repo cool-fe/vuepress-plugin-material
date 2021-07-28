@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.0 (2021-07-28)
+
+**Note:** Version bump only for package @winfe/plugin-auto-material-doc
+
+
+
+
+
 ## [0.0.4](https://github.com/cool-fe/winex-cli/compare/@winfe/plugin-auto-material-doc@0.0.4-beta.0...@winfe/plugin-auto-material-doc@0.0.4) (2021-07-28)
 
 **Note:** Version bump only for package @winfe/plugin-auto-material-doc
