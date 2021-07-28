@@ -1,6 +1,6 @@
 {
   "name": "@winfe/plugin-material-config",
-  "version": "0.0.4-beta.0",
+  "version": "0.0.4",
   "engines": {
     "node": ">=12.0.0"
   },
@@ -28,9 +28,9 @@
   },
   "dependencies": {
     "@vuepress/shared-utils": "^1.8.2",
-    "@winfe/plugin-auto-material-doc": "^0.0.4-beta.0",
-    "@winfe/plugin-demo-container": "^0.0.4-beta.0",
-    "@winfe/plugin-registry-material-components": "^0.0.4-beta.0",
+    "@winfe/plugin-auto-material-doc": "^0.0.4",
+    "@winfe/plugin-demo-container": "^0.0.4",
+    "@winfe/plugin-registry-material-components": "^0.0.4",
     "http-proxy-middleware": "^2.0.1",
     "markdown-it-emoji": "^2.0.0"
   },
