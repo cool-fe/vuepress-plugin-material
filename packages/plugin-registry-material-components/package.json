@@ -1,6 +1,6 @@
 {
   "name": "@winfe/plugin-registry-material-components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "node": ">=12.0.0"
   },
@@ -28,8 +28,8 @@
   "dependencies": {
     "@vuepress/shared-utils": "^1.8.2",
     "json-templater": "^1.2.0",
-    "uppercamelcase": "^3.0.0",
-    "markdown-it-emoji": "^2.0.0"
+    "markdown-it-emoji": "^2.0.0",
+    "uppercamelcase": "^3.0.0"
   },
   "license": "MIT",
   "devDependencies": {
