@@ -11,7 +11,7 @@ import { Context, PluginFunction } from 'vuepress-types';
 
 // import setupProxyFeature from './proxy';
 
-const geComponentsProxy = function geComponentsProxy(): any {
+const geComponentsProxy = function geComponentsProxy(): { [key: string]: string } {
   const componentConfigs = globby.sync(['components/*/winfe.config.js'], {
     cwd: process.cwd(),
     absolute: true
@@ -34,7 +34,7 @@ const geComponentsProxy = function geComponentsProxy(): any {
   return proxyObj;
 };
 
-export default (_: any, context: Context): ReturnType<PluginFunction<void>> => ({
+export default (_: unknown, context: Context): ReturnType<PluginFunction<void>> => ({
   name: '@winfe/plugin-modify-config',
   plugins: [
     [

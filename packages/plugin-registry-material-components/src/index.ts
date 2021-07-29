@@ -1,5 +1,5 @@
 // eslint-disable-next-line node/no-missing-import
-import type { PluginFunction } from 'vuepress-types/types/plugin';
+import { PluginFunction } from 'vuepress-types';
 
 import { resolve } from 'path';
 import genComponentsConf from './gen-components';

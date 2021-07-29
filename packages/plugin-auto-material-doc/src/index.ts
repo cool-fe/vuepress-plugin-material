@@ -1,4 +1,4 @@
-import { path, globby, sort } from '@vuepress/shared-utils';
+import { path, globby } from '@vuepress/shared-utils';
 
 // eslint-disable-next-line node/no-missing-import
 import type { PluginFunction } from 'vuepress-types/types/plugin';
@@ -23,6 +23,14 @@ interface ISlider {
   children: string[];
 }
 
+const sort = function sort<T>(arr: T[]) {
+  return arr.sort((a, b) => {
+    if (a < b) return -1;
+    if (a > b) return 1;
+    return 0;
+  });
+};
+
 const resolvePages = (patterns: string[], sourceDir: string, exclude: string) => {
   // eslint-disable-next-line no-param-reassign
   patterns = patterns || MATER_WORKSPACE_PATTERNS;
@@ -33,7 +41,6 @@ const resolvePages = (patterns: string[], sourceDir: string, exclude: string) =>
       patterns.push(`!${outDirRelative}`);
     }
   }
-  //@ts-ignore
   const pageFiles: string[] = sort(globby.sync(patterns, { cwd: sourceDir }));
   const addPages = pageFiles.map((relative) => {
     const filePath = path.resolve(sourceDir, relative);
