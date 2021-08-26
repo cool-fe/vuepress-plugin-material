@@ -7,8 +7,10 @@ import uppercamelcase from 'uppercamelcase';
 const endOfLine = require('os').EOL;
 //由于在不同的操作系统上换行符代表的ASCLL码不同，所以这里引用endOfLine
 
-const IMPORT_TEMPLATE = "import {{name}} from '@com/{{package}}/index.js'"; // import导入template
+const IMPORT_TEMPLATE =
+  "const {{name}} = () =>  import('@com/{{package}}/index.js').then((data) => data.default)"; // import导入template
 const INSTALL_COMPONENT_TEMPLATE = '  {{name}}';
+
 const MAIN_TEMPLATE = `
 import Vue from 'vue'\n
 {{include}}
@@ -17,19 +19,22 @@ const components = [
 {{install}}
 ]
 
-const install = function (Vue, opts = {}) {
-  components.forEach(component => {
-    if (component.notVueObj) {
-      return
-    }
-    Vue.component(component.name, component)
-  })
-}
-
-Vue.use({
-  install,
-{{list}}
-})`;
+export default ({
+  Vue, // VuePress 正在使用的 Vue 构造函数
+  isServer // 当前应用配置是处于 服务端渲染 或 客户端
+}) => {
+  if (!isServer) {
+    return Promise.all(components.map((com) => com())).then((comValue) => {
+      comValue.forEach((component) => {
+        if (component.notVueObj) {
+          return;
+        }
+        Vue.component(component.name, component);
+      });
+    });
+  }
+};
+`;
 
 export default async function generEntry(components: Map<string, string>): Promise<string> {
   const ComponentNames = Object.keys(components);
