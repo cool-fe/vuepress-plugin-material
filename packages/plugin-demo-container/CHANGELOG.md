@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.2 (2021-08-26)
+
+
+### Bug Fixes
+
+* 自动注册组件异步加载，解决dom api没法在vue-ssr使用 ([fa44665](https://github.com/cool-fe/winex-cli/commit/fa446650b8f03a4d55e33d6f64160a9d04f087d2))
+
+
+
+
+
 ## 1.0.1 (2021-07-29)
 
 **Note:** Version bump only for package @winfe/plugin-demo-container
