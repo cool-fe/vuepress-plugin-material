@@ -47,7 +47,13 @@ export default (_: unknown, context: Context): ReturnType<PluginFunction<void>> 
       PluginAutoMaterialDoc,
       {
         sourceDir: process.cwd(),
-        patterns: ['components/*/README.md', 'scaffolds/*/README.md']
+        patterns: [
+          'components/*/README.md',
+          'block/*/README.md',
+          'plugin/*/README.md',
+          'scaffolds/*/README.md',
+          '*.md'
+        ]
       }
     ]
     // [PluginDemoContainer]

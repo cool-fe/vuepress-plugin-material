@@ -7,7 +7,8 @@ const MATER_WORKSPACE_PATTERNS = [
   'components/*/README.md',
   'scaffolds/*/README.md',
   'pages/*/README.md',
-  'blocks/*/README.md'
+  'blocks/*/README.md',
+  '*.md'
 ];
 
 interface IPluginOptions {
